@@ -1,0 +1,209 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: "segoe ui";
+}
+
+/* this is the css for navbar */
+nav {
+  height: 50px;
+  width: 100%;
+  background-color: #4d4d4d;
+  position: relative;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+nav > .nav-header {
+  display: inline;
+}
+
+nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+
+nav > .nav-btn {
+  display: none;
+}
+
+nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+nav > #nav-check {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  nav > .nav-btn > label:hover,
+  .nav #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+
+/* navbar css is completed */
+
+/* Home section */
+/* flex  flex-col  md:justify-center justify-center items-center p-5 md:p-0  md:pt-24n */
+.homeSection {
+  background-image: radial-gradient(
+    rgb(241, 175, 175),
+    rgb(185, 185, 236),
+    rgb(255, 255, 98)
+  );
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  gap: 20%;
+  align-items: center;
+}
+.left-side h1,
+h3,
+h2 {
+  margin: 0;
+  cursor: pointer;
+}
+.left-side h1 {
+  font-size: 6em;
+  color: blueviolet;
+}
+.left-side h3 {
+  font-size: 3em;
+}
+.left-side h2 {
+  color: darkblue;
+  font-size: 2.1em;
+}
+.blob {
+  background-image: url("https://codeartist.netlify.app/Images/sreerajDp.png");
+  height: 400px;
+  width: 400px;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin: 20px;
+  box-shadow: 0 2px 5px 5px rgb(198, 200, 202);
+  animation: animate 5s ease-in-out infinite;
+  transition: all 1s ease-in-out;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .blob {
+    height: 300px;
+    width: 300px;
+  }
+  .homeSection {
+    flex-direction: column;
+    gap: 1%;
+  }
+  .left-side h1{
+    font-size: 5em;
+  }
+}
+
+@media (max-width: 767px) {
+  .blob {
+    height: 300px;
+    width: 300px;
+  }
+  .homeSection {
+    flex-direction: column;
+    gap: 1%;
+  }
+  .left-side h1{
+    font-size: 5em;
+  }
+
+
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 30%;
+    background-color: lightgray;
+  }
+  45% {
+    background-color: antiquewhite;
+    border: 1px solid black;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    background-color: bisque;
+  }
+}
+
+/* Home section css is completed */
+
+/* footer section  */
+footer{
+    background-color: #4d4d4d;
+    height: 10vh;
+    margin-top: -50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+}
+/* end of footer section */

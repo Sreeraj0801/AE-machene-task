@@ -1,0 +1,42 @@
+
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+p{
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large;
+    color: orangered;
+}
+
+form{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    align-items: center;
+    background-color: green;
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+    font-size: large;
+    width: 20rem;
+}
+input{
+    border: 1 px solid black;
+    height: 50px;
+    width: 20rem;
+    font-size: x-large;
+}

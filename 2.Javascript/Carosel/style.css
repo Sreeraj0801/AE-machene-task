@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+}
+
+header,
+footer {
+  background: black;
+  color: #ffff;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  padding: 1.3rem;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: small;
+  color: slategrey;
+}
+.slideshow {
+  padding: 2rem;
+}
+.slideshow__images {
+  height: 70vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.slideshow__images img {
+  height: 100%;
+  display: none;
+}
+
+.slideshow__images img.active {
+  display: block;
+}
+
+.slideshow__directions{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.slideshow__directions button{
+    font-size: xx-large;
+    margin-top: -20px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+}

@@ -1,0 +1,38 @@
+.mainBody{
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    align-items: center;
+    text-align: center;
+    height: 80vh;
+}
+
+#game {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    width: 300px;
+    margin-bottom: 20px;
+  }
+  
+  .cell {
+    border: 1px solid #000;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    cursor: pointer;
+  }
+  
+  button {
+    font-size: 24px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: goldenrod;
+  }
+  button:hover{
+    background-color: yellowgreen;
+  }
+  

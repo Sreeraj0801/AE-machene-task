@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elegant Navbar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li class="dropdown" aria-haspopup="true">
+          <a href="#" aria-expanded="false">Services</a>
+          <ul class="dropdown-content" aria-hidden="true">
+            <li><a href="#">Service 1</a></li>
+            <li><a href="#">Service 2</a></li>
+            <li class="sub-dropdown" aria-haspopup="true">
+              <a href="#" aria-expanded="false">More Services</a>
+              <ul class="sub-dropdown-content" aria-hidden="true">
+                <li><a href="#">Service 3</a></li>
+                <li><a href="#">Service 4</a></li>
+                <li><a href="#">Service 5</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <script src="script.js"></script>
+</body>
+</html>

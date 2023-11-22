@@ -1,0 +1,26 @@
+/* Your CSS styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    overflow: hidden;
+
+  
+}
+
+h1 {
+    color: #333;
+    font-size: 3em;
+}
+
+
+#browser-info {
+    font-size: 18px;
+    margin-top: 20px;
+}
